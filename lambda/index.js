@@ -11,7 +11,7 @@ const LaunchRequestHandler = {
     },
     handle(handlerInput) {
              return handlerInput.responseBuilder
-            .speak("Hello Sailors!")
+            .speak("Welcome to greasy hands!")
             .reprompt("what's up move with plan or logs !")
             .getResponse()
     }
@@ -195,7 +195,7 @@ const plan = {
         {
             console.log("muv");
             options = {
-                host: '167.71.157.72',
+                host: 'ip',
                 port: 80,
                 path: '/mvu?metric='+metric+"&value="+value+"&unit="+unit+"&userid="+userid+"&workerid="+tag+"&type=plan",
                 method: 'GET'
@@ -213,7 +213,7 @@ const plan = {
         {
             console.log("mv");
             options = {
-                host: '167.71.157.72',
+                host: 'ip',
                 port: 80,
                 path: '/mv?metric='+metric+"&value="+value+"&userid="+userid+"&workerid="+tag+"&type=plan",
                 method: 'GET'
@@ -228,7 +228,7 @@ const plan = {
         }
         else if (metric !== undefined && tag !== undefined ){
      options = {
-      host: '167.71.157.72',
+      host: 'ip',
       port: 80,
       path: '/m?metric='+metric+"&userid="+userid+"&workerid="+tag+"&type=plan",
       method: 'GET'
@@ -279,7 +279,7 @@ const log={
             if(parseInt(value) < 10)
             {
      options = {
-      host: '167.71.157.72',
+      host: 'ip',
       port: 80,
       path: '/mvu?metric='+metric+"&unit="+unit+"&value="+value+"&userid="+userid+"&workerid="+tag+"&type=log",
       method: 'GET'
@@ -305,7 +305,7 @@ const log={
         {
             console.log("muv");
             options = {
-                host: '167.71.157.72',
+                host: 'ip',
                 port: 80,
                 path: '/mvu?metric='+metric+"&value="+value+"&unit="+unit+"&userid="+userid+"&workerid="+tag+"&type=log",
                 method: 'GET'
@@ -323,7 +323,7 @@ const log={
         {
             console.log("mv");
             options = {
-                host: '167.71.157.72',
+                host: 'ip',
                 port: 80,
                 path: '/mv?metric='+metric+"&value="+value+"&userid="+userid+"&workerid="+tag+"&type=log",
                 method: 'GET'
@@ -340,7 +340,7 @@ const log={
         else if(metric !== undefined && tag !== undefined && unit === undefined && value === undefined)
         {
             options = {
-      host: '167.71.157.72',
+      host: 'ip',
       port: 80,
       path: '/m?metric='+metric+"&userid="+userid+"&workerid="+tag+"&type=log",
       method: 'GET'
