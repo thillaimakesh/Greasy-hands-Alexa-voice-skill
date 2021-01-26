@@ -1,0 +1,374 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "workmate demo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "bye"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+            "home"
+          ]
+        },
+        {
+          "name": "log",
+          "slots": [
+            {
+              "name": "metrics",
+              "type": "metrics"
+            },
+            {
+              "name": "unit",
+              "type": "unit"
+            },
+            {
+              "name": "counters",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "any",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "{metrics} {unit} is {counters} for {any}",
+            "log {metrics} is  {counters} {unit} for {any}",
+            "log {metrics} {counters} {unit} for {any}",
+            "log {metrics} checked  for {any}",
+            "log {metrics}  for {any}",
+            "{metrics}  checked for {any}",
+            "{metrics} is {counters} for {any}",
+            "{metrics} {counters} checked for {any}",
+            "log as {metrics} {counters} {unit} to {any}",
+            "{metrics} bought for {any}",
+            "{metrics} checked for {any}",
+            "{metrics} for {any}",
+            "{metrics} taken for {any}",
+            "{metrics} done to {any}",
+            "{metrics} is {counters} to {any}",
+            "{metrics} is {counters} {unit}  for {any}",
+            "{counters} {unit} {metrics} for {any}",
+            "{counters} {metrics} to {any}",
+            "{metrics} {counters} to {any}",
+            "{metrics} {counters} {unit} for {any}",
+            "log is {metrics} {counters} {unit}  for {any}",
+            "checked {metrics} for {any}"
+          ]
+        },
+        {
+          "name": "plan",
+          "slots": [
+            {
+              "name": "plans",
+              "type": "plans"
+            },
+            {
+              "name": "metrics",
+              "type": "metrics"
+            },
+            {
+              "name": "unit",
+              "type": "unit"
+            },
+            {
+              "name": "counter",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "any",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "check {metrics} for {any}",
+            "{plans} {metrics} for {any}",
+            "add plan to check {metrics} for {any}",
+            "{plans} {metrics} {counter} {unit} for {any}",
+            "{plans} is to check {metrics} {unit} to {any}",
+            "my {plans} is to check {metrics} for {any}",
+            "{plans} {metrics} {counter} {unit} to {any}",
+            "plan is to {plans} {metrics} {unit} for {any}",
+            "add plan is to {plans} {metrics} for {any}",
+            "sailors workmate {plans} {metrics} for {any}",
+            "workmate measure {metrics}  for {any}",
+            "{plans} is to check {metrics} {unit}  for {any}",
+            "my {plans} is to check {metrics}  for {any}"
+          ]
+        },
+        {
+          "name": "status",
+          "slots": [
+            {
+              "name": "statuses",
+              "type": "statuses"
+            },
+            {
+              "name": "tag",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "samples": [
+            "{statuses} with {tag}",
+            "show current {statuses} for {tag}",
+            "can i know the current {statuses} please for {tag}",
+            "may i know the current {statuses} for {tag}",
+            "{statuses} for {tag}",
+            "what is the current {statuses} for {tag}",
+            "can i know current  {statuses} for {tag}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "battery "
+              }
+            },
+            {
+              "name": {
+                "value": "head lamp",
+                "synonyms": [
+                  "head light"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "brake oil",
+                "synonyms": [
+                  "brake oil",
+                  "brakeoil",
+                  "brake fluid",
+                  "brake lube",
+                  "brake lubricant"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "transmission oil",
+                "synonyms": [
+                  "transmission oil",
+                  "transmissionoil",
+                  "transmission fluid",
+                  "transmission lube",
+                  "transmission lubricant"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "wheel alignment",
+                "synonyms": [
+                  "wheel alignment",
+                  "wheelalignment"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "coolantoil"
+              }
+            },
+            {
+              "name": {
+                "value": "tire pressure"
+              }
+            },
+            {
+              "name": {
+                "value": "coolentoil",
+                "synonyms": [
+                  "coolent oil"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "batterywater",
+                "synonyms": [
+                  "battery water"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "engineoil",
+                "synonyms": [
+                  "engine oil"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "brakeoil",
+                "synonyms": [
+                  "brake oil"
+                ]
+              }
+            }
+          ],
+          "name": "metrics"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "volt",
+                "synonyms": [
+                  "voltage",
+                  "volts",
+                  "V",
+                  "v"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "psi",
+                "synonyms": [
+                  "bar",
+                  "PSI"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "level",
+                "synonyms": [
+                  "range"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "celsius"
+              }
+            },
+            {
+              "name": {
+                "value": "degrees C"
+              }
+            },
+            {
+              "name": {
+                "value": "beats per minute"
+              }
+            },
+            {
+              "name": {
+                "value": "bpm"
+              }
+            },
+            {
+              "name": {
+                "value": "degrees fahrenheit"
+              }
+            },
+            {
+              "name": {
+                "value": "degree celsius"
+              }
+            }
+          ],
+          "name": "unit"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "post plan",
+                "synonyms": [
+                  "plans",
+                  "plan"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "check",
+                "synonyms": [
+                  "check"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "task",
+                "synonyms": [
+                  "Task"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "project"
+              }
+            },
+            {
+              "name": {
+                "value": "master plan"
+              }
+            },
+            {
+              "name": {
+                "value": "development plans"
+              }
+            },
+            {
+              "name": {
+                "value": "projects"
+              }
+            },
+            {
+              "name": {
+                "value": "work"
+              }
+            }
+          ],
+          "name": "plans"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "what\u0027s up"
+              }
+            },
+            {
+              "name": {
+                "value": "statuses"
+              }
+            },
+            {
+              "name": {
+                "value": "status"
+              }
+            }
+          ],
+          "name": "statuses"
+        }
+      ]
+    }
+  },
+  "version": "23"
+}

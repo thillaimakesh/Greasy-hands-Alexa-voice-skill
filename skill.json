@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Activity reporting",
+          "examplePhrases": [
+            "Alexa, open workmate demo."
+          ],
+          "keywords": [
+            "planner",
+            "plans",
+            "logs",
+            "track",
+            "auto-repair",
+            "auto",
+            "repair",
+            "logging",
+            "reporting",
+            "report",
+            "task"
+          ],
+          "name": "Workmate",
+          "description": "Used for Auto repair teams for instant status logging and activity tracking \nCommands used in workmate are \n1)\"log\" - \u0027activity\u0027 : for logging completed work\n2)\"status\" : which gives complete information about completed work and pending works\n3)\"plan\":you can tell your plan",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "This is demo skill so plans for skills will be same and logging can be done dynamically",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:330942461636:function:99da93c5-35af-45a3-a522-f7782c248634:Release_1"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
